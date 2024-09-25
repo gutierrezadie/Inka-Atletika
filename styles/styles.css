@@ -1,34 +1,30 @@
-:root{
+:root {
     --primary-color: #9F7163;
     --secondary-color: #dab6a9;
     --font-family: 'Proxima Nova Rg', Arial, sans-serif;
 }
 
-
 body {
     margin: 0;
-    
 }
 
-/*header and navbar*/
+/* Header and Navbar */
 .header {
-    
     background-color: #9F7163;
     height: 34px;
     text-align: center;
-    
 }
 
 .navbar {
     z-index: 2;
     position: sticky;
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     top: 0;
     background-color: #fff;
-    height: 124px;
+    height: auto; /* Allow height to be flexible */
     padding: 20px;
 }
 
@@ -36,6 +32,7 @@ body {
     list-style: none;
     justify-content: center;
     display: flex;
+    flex-wrap: wrap; /* Allow items to wrap in smaller screens */
 }
 
 .navbar a {
@@ -44,8 +41,7 @@ body {
     text-decoration: none;
     padding: 17px;
     font-size: 1.4rem;
-    font-family: var(--font-family)
-    
+    font-family: var(--font-family);
 }
 
 .navbar a:hover {
@@ -56,49 +52,44 @@ body {
     color: #9F7163;
 }
 
-/*about*/
-
-
-
+/* About Section */
 .three-color-div {
     display: flex;
-    flex-direction: column; 
-    width: 100%; 
-    height: auto; 
-    position: relative; /* Enable absolute positioning for the image */
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    position: relative;
 }
 
 .color-section {
-    width: 100%; /* Full width for each section */
+    width: 100%;
 }
 
 .one {
-    background-color: #fff; 
+    background-color: #fff;
     height: 100px; /* Custom height for this section */
 }
 
 .two {
-    background-color: var(--primary-color); 
+    background-color: var(--primary-color);
     height: 390px; /* Different height for this section */
 }
 
 .three {
-    background-color: #fff; 
+    background-color: #fff;
     height: 350px; /* Different height for this section */
 }
 
-/* Styles for the image */
+/* Styles for the Image */
 .overlay-element {
-    position: absolute; /* Position it absolutely */
-    top: 0; /* Adjust this to move the image vertically */
-    left: 50%; /* Center it horizontally */
-    transform: translateX(-50%); /* Center it properly */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
     z-index: 1; /* Ensure it appears above the color sections */
     max-width: 100%; /* Responsive size */
     height: auto; /* Maintain aspect ratio */
     margin-top: 215px;
-     
-    
 }
 
 .overlay-element p {
@@ -108,7 +99,6 @@ body {
     text-align: justify;
     width: 675px;
     margin-top: 40px;
-    
 }
 
 .overlay-element ul {
@@ -148,52 +138,52 @@ body {
 .form {
     background-size: cover; /* Scale the image to cover the div */
     background-position: center; /* Center the image */
-    background-repeat: no-repeat; 
+    background-repeat: no-repeat;
     display: flex; /* Use flexbox for alignment */
-    flex-direction: column; 
-    align-items: center; 
+    flex-direction: column;
+    align-items: center;
     width: 675px;
     height: 550px;
     justify-content: center;
-    align-items: center;
 }
 
-.form p{
+.form p {
     width: 470px;
     font-size: 1.5rem;
     text-align: justify;
 }
 
-.form-input, .form-button {
-    height: 80px; 
-    width: 470px; 
-    margin: 15px ; 
-    padding: 0 10px; 
-    box-sizing: border-box; 
+.form-input,
+.form-button {
+    height: 80px;
+    width: 470px;
+    margin: 15px;
+    padding: 0 10px;
+    box-sizing: border-box;
     font-family: var(--font-family);
 }
 
-.form-input{
-    border: none; 
+.form-input {
+    border: none;
     background-color: var(--secondary-color);
     font-size: 1.4rem;
 }
 
 .form-button {
-    cursor: pointer; 
-    background-color: var(--primary-color); 
-    color: white; 
+    cursor: pointer;
+    background-color: var(--primary-color);
+    color: white;
     font-size: 2rem;
-    border: none; 
+    border: none;
 }
 
 .products {
     background-color: #fff;
-    height: 900px;
+    height: auto; /* Allow height to adjust based on content */
     display: flex;
     flex-direction: column;
-    align-items: center; 
-    text-align: center; 
+    align-items: center;
+    text-align: center;
     padding: 20px;
 }
 
@@ -202,41 +192,41 @@ body {
     text-align: center;
     font-size: 30px;
     color: #9F7163;
-    font-family: var(--font-family) 
+    font-family: var(--font-family);
 }
 
 .prod-ovr {
     font-family: var(--font-family);
     color: var(--primary-color);
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-    display: grid; 
-    grid-template-columns: repeat(3, 1fr); 
-    gap: 20px; 
-    justify-items: center; 
-    width: 100%; 
-    max-width: 1400px; 
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    justify-items: center;
+    width: 100%;
+    max-width: 1400px;
 }
 
 .prod-ovr li {
     display: flex;
     flex-direction: column;
-    align-items: center; 
+    align-items: center;
 }
 
 .prod-ovr li img {
-    width: 100%; 
-    max-width: 300px; 
-    height: auto; 
+    width: 100%;
+    max-width: 300px;
+    height: auto;
 }
 
 .prod-ovr h1 {
-    font-size: 1.4rem; 
-    margin-top: 10px; 
+    font-size: 1.4rem;
+    margin-top: 10px;
 }
 
-.browse-btn{
+.browse-btn {
     margin-top: 50px;
     border: none;
     height: 32px;
@@ -247,49 +237,85 @@ body {
     color: #fff;
 }
 
+/* Media Queries for Responsiveness */
+@media screen and (max-width: 1024px) {
+    .navbar a {
+        padding: 15px;
+        font-size: 1.2rem;
+    }
+
+    .overlay-element p {
+        width: 90%; /* Adjust text width for smaller screens */
+    }
+
+    .col {
+        gap: 40px; /* Reduced gap for medium screens */
+    }
+
+    .col li {
+        flex: 0 0 200px; /* Reduced item width */
+    }
+
+    .form {
+        width: 90%; /* Allow form to take more width */
+        height: auto; /* Allow height to adjust */
+    }
+}
 
 @media screen and (max-width: 768px) {
-
-    
-
-    .col .form {
-        margin-top: 0;
-    }
-    
     .prod-ovr {
-        grid-template-columns: 1fr; 
+        grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
     }
+
     .navbar {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
-        height: 175px; 
+        height: auto; /* Allow flexible height */
     }
+
     .navbar ul {
         list-style: none;
         padding: 0;
     }
+
     .navbar a {
-        padding: 10px; 
-        font-size: 15px;
+        padding: 10px;
+        font-size: 1rem;
     }
-    .nav-logo{
+
+    .nav-logo {
         width: 100px;
     }
 
+    .overlay-element p {
+        font-size: 1.2rem; /* Smaller text size */
+    }
 
+    .form {
+        width: 90%; /* Allow form to take more width */
+        height: auto; /* Allow height to adjust */
+    }
 }
 
 @media screen and (max-width: 480px) {
-    .navbar{
-        margin-bottom: -100px;
+    .navbar {
+        margin-bottom: -100px; /* Adjust margin */
     }
+
     .prod-ovr {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr; /* One column on small screens */
     }
 
+    .prod-lbl h1 {
+        font-size: 24px; /* Smaller heading size */
+    }
 
+    .overlay-element p {
+        font-size: 1rem; /* Smaller text size */
+        width: 95%; /* Full width for text */
+    }
+
+    .form-input, .form-button {
+        width: 100%; /* Full width inputs */
+    }
 }
-
-
-
-

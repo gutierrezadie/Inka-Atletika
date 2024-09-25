@@ -1,5 +1,6 @@
 :root{
     --primary-color: #9F7163;
+    --secondary-color: #dab6a9;
     --font-family: 'Proxima Nova Rg', Arial, sans-serif;
 }
 
@@ -19,6 +20,7 @@ body {
 }
 
 .navbar {
+    z-index: 2;
     position: sticky;
     display: flex;
     flex-direction: column; 
@@ -56,93 +58,129 @@ body {
 
 /*about*/
 
-
-
-
-.form-container{
-    width: 500px;
-    height: 480px;
-    background-size: cover; /* Scale the image to cover the entire container */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Don't repeat the image */
-    margin-top: 670px;
-    margin-left: 100px;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-   
-}
-
-.form-container p{
-    font-family: var(--font-family);
-    
-}
-
-
-
-
-.top-split {
+.three-color-div {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: #fff;
-    height: 100px;
+    flex-direction: column; 
+    width: 100%; 
+    height: auto; 
+    position: relative; /* Enable absolute positioning for the image */
 }
 
-.top-split img {
-   margin-top: 260px;
-   
+.color-section {
+    width: 100%; /* Full width for each section */
 }
 
-.bg-container{
-    background-color: #D0BAA8;
-    height: 300px;
-    text-align: center;
-} 
-
-.bottom-split {
-    background-color: #fff;
-    height: 350px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.one {
+    background-color: #fff; 
+    height: 100px; /* Custom height for this section */
 }
 
-.bottom-split p {
-    justify-content: center;
-    align-items: center;
-    margin-top: -1px;
+.two {
+    background-color: var(--primary-color); 
+    height: 390px; /* Different height for this section */
+}
+
+.three {
+    background-color: #fff; 
+    height: 900px; /* Different height for this section */
+}
+
+/* Styles for the image */
+.overlay-element {
+    position: absolute; /* Position it absolutely */
+    top: 0; /* Adjust this to move the image vertically */
+    left: 50%; /* Center it horizontally */
+    transform: translateX(-50%); /* Center it properly */
+    z-index: 1; /* Ensure it appears above the color sections */
+    max-width: 100%; /* Responsive size */
+    height: auto; /* Maintain aspect ratio */
+    margin-top: 215px;
+}
+
+.overlay-element p {
+    font-size: 1.5rem;
     font-family: var(--font-family);
-    font-size: 23px;
     color: var(--primary-color);
     text-align: justify;
-    width: 600px;
-    margin-top: 50px;
-    margin-left: -590px;
-
+    width: 675px;
+    margin-top: 40px;
 }
 
-
-
-/*.prod-lbl{
-    
-    text-align: center;
-    font-size: 30px;
-    color: #9F7163;
-    font-family: var(--font-family)
-}
-
-.products {
-    background-color: #fff;
-    height: 900px;
-}
-
-.prod-ovr {
+.overlay-element ul{
     list-style: none;
-    font-family: var(--font-family);
-    color: var(--primary-color);
 }
-*/
+
+.overlay-element ul {
+    list-style-type: none; /* Remove bullet points from the list */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+.overlay-element li {
+    margin-bottom: 20px; /* Space between list items */
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; /* Stack items in a column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text for better readability */
+}
+
+.form {
+    background-color: gray;
+    display: flex; /* Use flexbox for alignment */
+    flex-direction: column; 
+    align-items: center; 
+    width: 675px;
+    height: 550px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+.form p{
+    width: 470px;
+    font-size: 1.5rem;
+    text-align: justify;
+}
+
+.form-input, .form-button {
+    height: 80px; 
+    width: 470px; 
+    margin: 15px ; 
+    padding: 0 10px; 
+    box-sizing: border-box; 
+    font-family: var(--font-family);
+}
+
+.form-input{
+    border: none; 
+    background-color: var(--secondary-color);
+    font-size: 1.4rem;
+}
+
+
+
+
+/* Additional styles for button */
+.form-button {
+    cursor: pointer; 
+    background-color: var(--primary-color); 
+    color: white; 
+    font-size: 2rem;
+    border: none; 
+     
+}
+
+
+
+
+
+
+
+
+
+
 
 .products {
     background-color: #fff;
@@ -227,41 +265,18 @@ body {
         width: 100px;
     }
 
-    .bottom-split p {
-        font-size: 20px;
-    }
+
 }
 
 @media screen and (max-width: 480px) {
     .navbar{
         margin-bottom: -100px;
     }
-
-    .top-split{
-        height: 150px;
-    }
-
-    .top-split img {
-        width: 290px;
-    }
-
-    .bg-container{
-        height: 190px;
-    }
-
-    .bottom-split p {
-        font-size: 11px;
-        margin-left: 0px;
-    }
-
     .prod-ovr {
         grid-template-columns: 1fr; 
     }
 
-    .bottom-split p {
-        width: 280px;
-        height: 300px;
-    }
+
 }
 
 

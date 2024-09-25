@@ -5,39 +5,39 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+/*header and navbar*/
 .header {
-    position: sticky;
+    
     background-color: #9F7163;
-    padding: 23px;
+    height: 34px;
     text-align: center;
-}
-
-.nav-logo{
-    margin: 18px 0 0 0;
+    
 }
 
 .navbar {
+    position: sticky;
     display: flex;
     flex-direction: column; 
+    justify-content: center;
     align-items: center;
-    position: sticky;
     top: 0;
-    overflow: hidden;
     background-color: #fff;
-    height: 175px;
+    height: 123px;
+    padding: 20px;
 }
 
 .navbar ul {
     list-style: none;
+    justify-content: center;
     display: flex;
-    
 }
 
 .navbar a {
+    justify-content: center;
     color: #D0BAA8;
     text-decoration: none;
-    padding: 10px;
-    font-size: 17px;
+    padding: 17px;
+    font-size: 1rem;
 }
 
 .navbar a:hover {
@@ -48,38 +48,61 @@ body {
     color: #9F7163;
 }
 
-.split {
+/*about*/
+
+.top-split {
     background-color: #fff;
-    padding: 40px;
-    text-align: center;
+    height: 52px;
 }
 
-.container{
+.bg-container{
     background-color: #D0BAA8;
-    padding: 180px;
+    height: 220px;
     text-align: center;
+} 
+
+.bottom-split {
+    background-color: #fff;
+    height: 350px;
 }
 
-.logo{
-    float: left;
+.prod {
+    
+    background-color: #fff;
+    height: 33px;
+    text-align: center;
+    
 }
 
+.prod-lbl{
+    font-size: 30px;
+    color: #9F7163;
+
+}
+
+.products {
+    background-color: #fff;
+    height: 900px;
+}
 
 /* Responsive adjustments */
 @media screen and (max-width: 768px) {
-    
+
     .navbar {
-        flex-direction: column; ; /* Stack items vertically on smaller screens */
+        flex-direction: column; 
+        align-items: center;
         height: 175px; /* Allow height to adjust based on content */
     }
-
     .navbar ul {
         list-style: none;
         padding: 0;
-        
     }
-
     .navbar a {
         padding: 10px; /* Adjust padding for smaller touch targets */
+        font-size: 15px;
+    }
+    .nav-logo{
+        width: 100px;
     }
 }
+

@@ -125,25 +125,8 @@ body {
     text-align: center; /* Center text for better readability */
 }
 
-.col {
-    display: flex; /* Enable flexbox for the column */
-    justify-content: space-between; /* Space out the items evenly */
-    flex-wrap: nowrap; /* Prevent items from wrapping to the next row */
-    gap: 80px; /* Fixed gap between items */
-}
 
-.col li {
-    flex: 0 0 300px; /* Set a fixed width for each list item (300px in this case) */
-    margin: 0; /* Remove margin since we are using gap */
-    display: flex; /* Use flexbox for alignment */
-    flex-direction: column; /* Stack items in a column */
-    align-items: center; /* Center items horizontally */
-    text-align: center; /* Center text for better readability */
-}
 
-.col .form {
-    margin-top: 200px;
-}
 
 .form {
     background-size: cover; /* Scale the image to cover the div */
@@ -287,6 +270,7 @@ body {
         grid-template-columns: 1fr; 
     }
 
+   
 
 }
 

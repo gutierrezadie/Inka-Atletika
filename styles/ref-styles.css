@@ -170,6 +170,25 @@ body {
     border: none; 
 }
 
+
+
+.content-col{
+    list-style: none; 
+    padding: 0; 
+    margin: 0; 
+    display: grid; 
+    grid-template-columns: repeat(2, 1fr); 
+    gap: 150px; 
+    justify-items: center; 
+    width: 100%; 
+    max-width: 1500px; 
+}
+
+.content-col .form{
+    margin-top: 200px;
+}
+
+
 .products {
     background-color: #fff;
     height: 900px;
@@ -231,13 +250,38 @@ body {
 }
 
 
+@media screen and (max-width: 1280px) {
+
+    .three {
+        height: 1200px; /* Different height for this section */
+    }
+    .content-col{
+        grid-template-columns: 1fr; 
+    }
+
+    .content-col .form{
+        margin-top: -180px;
+    }
+
+    .content-col .form{
+        margin-top: -10px;
+    }
+}
+
+
 @media screen and (max-width: 768px) {
 
-    
-
-    .col .form {
-        margin-top: 0;
+    .three {
+        height: 1200px; 
     }
+    .content-col{
+        grid-template-columns: 1fr; 
+    }
+
+    .content-col .form{
+        margin-top: -10px;
+    }
+    
     
     .prod-ovr {
         grid-template-columns: 1fr; 

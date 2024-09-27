@@ -260,6 +260,7 @@ body {
     font-size: 1.4rem; 
     margin-top: 10px; 
     text-align: left;
+    color: var(--caption-color);
 }
 
 .browse-btn{
@@ -285,7 +286,7 @@ body {
 
 .more-info {
     background-color: #fff;
-    height: 840px;
+    height: 520px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -321,10 +322,11 @@ body {
     margin: 0; 
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
-    gap: -30px; 
+   
     justify-items: center; 
     width: 100%; 
-    max-width: 1610px; 
+    max-width: 1620px; 
+    
 }
 
 .info-content li {
@@ -334,7 +336,8 @@ body {
 }
 
 .info-content li img {
-    width: 680px; 
+    
+    width: 685px; 
     height: auto; 
 }
 
@@ -346,30 +349,104 @@ body {
 /*footer*/
 
 
-.footer-container {
+
+/* Center the entire footer content */
+.footer-content {
     display: flex;
-    flex-direction: column; 
-    width: 100%; 
-    height: 900px; 
+    justify-content: space-between; /* Distribute space between footer-about and footer-icons */
+    align-items: flex-start;
+    max-width: 1480px; /* Adjust as necessary */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
 }
 
-.footer-section {
-    width: 100%; /* Full width for each section */
+.footer-about h1{
+    font-family: var(--font-family);
+    color: var(--caption-color);
+    font-size: 1.5rem;
+    width: 300px;
+    padding: 0;
+    
 }
 
-.s-one {
-    background-color: var(--section-color); 
-    height: 50px; /* Custom height for this section */
+/* Style the About section */
+/* Center the entire footer content */
+.footer-content {
+    display: flex;
+    justify-content: space-between; /* Distribute space between footer-about and footer-icons */
+    align-items: flex-start;
+    max-width: 1480px; /* Adjust as necessary */
+    margin: 0 auto; /* Center the content horizontally */
+    padding: 20px;
+    height: 300px;
 }
 
-.s-two {
-    background-color: var(--background-color); 
-    height: 33px; /* Different height for this section */
+/* Style for h1 inside the footer-about section */
+.footer-about h1 {
+    font-family: var(--font-family);
+    color: var(--caption-color);
+    font-size: 1.5rem;
+    width: 300px;
+    padding: 0;
+    margin-bottom: 10px;
 }
 
+/* Style the About section */
+.footer-about {
+    flex: 2; /* Take up available space */
+}
 
+.underline {
+    border-bottom: 3px solid var(--caption-color);
+    margin-bottom: 10px; /* Space between the line and the list */
+    margin-left: -3px;
+    width: 300px;
+}
 
+/* Create a 5x2 grid layout for the list */
+.f-about {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    grid-auto-rows: auto; /* Ensure rows adjust dynamically */
+    list-style-type: none; /* Remove bullet points */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margins */
+    gap: 10px 10px; /* Adjust vertical and horizontal gaps */
+    width: 500px; /* Control the width of the grid */
+    font-size: 1.5rem;
+}
 
+/* Style each list item */
+.f-about li {
+    font-family: var(--font-family);
+    font-size: 1.2rem;
+}
+
+/* Style the links within the list */
+.f-about a {
+    text-decoration: none;
+    color: var(--caption-color);
+}
+
+/* Style the logo section */
+.f-icons li{
+    list-style: none;
+}
+
+.f-icons {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: 40px;
+    gap: 80px;
+}
+
+/* Style the logo inside the footer-icons */
+.f-icons img {
+    margin-top: 100px;
+    max-width: 80px; /* Adjust logo size */
+    height: auto;
+}
 
 
 
@@ -396,6 +473,11 @@ body {
         grid-template-columns: 1fr; 
     }
 
+    .copyright{
+        height: 150px;
+        background-color: var(--button-color);
+    }
+
     /*more-info*/
 
     .add-info{
@@ -407,6 +489,7 @@ body {
 
     .info-content img{
         height: 100px;
+        
     }
 
     .info-content{
@@ -426,25 +509,29 @@ body {
         font-size: 1.5rem;
     }
 
-   
-    
 
-    
+    /*footer*/
+    .footer-content {
+        margin-top: 1420px;
+        flex-direction: column; /* Stack content vertically */
+        align-items: center; /* Center both the sections */
+        height: auto; /* Allow height to adjust dynamically */
+    }
 
- 
+    .f-about {
+        
+        width: 100%; /* Make the list take full width */
+        text-align: left; /* Center text inside the grid */
+    }
 
+    .footer-icons {
+        justify-content: center; /* Center the icons */
+        
+    }
 
-    
-
-   
-
-
-
- 
-
-
-
-  
+    .footer-icons img {
+        margin-top: 50px;
+    }
 }
 
 
@@ -467,7 +554,7 @@ body {
 
 
   
-}
+
 
 
 

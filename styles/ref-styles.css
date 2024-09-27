@@ -64,6 +64,7 @@ body {
 
 .navbar a:hover {
     color: var(--button-color);
+    font-size: 1.5rem;
     transition: .3s;
 }
 
@@ -291,7 +292,7 @@ body {
 
 .more-info {
     background-color: #fff;
-    height: 520px;
+    height: 460px;
     display: flex;
     flex-direction: column;
     align-items: center; 
@@ -326,7 +327,6 @@ body {
     margin: 0; 
     display: grid; 
     grid-template-columns: repeat(2, 1fr); 
-    
     justify-items: center; 
     width: 100%; 
     max-width: 1620px; 
@@ -346,25 +346,19 @@ body {
 }
 
 
-
-
-
-
 /*footer*/
 
-/* Style the About section */
-/* Center the entire footer content */
 .footer-content {
     display: flex;
-    justify-content: space-between; /* Distribute space between footer-about and footer-icons */
+    justify-content: space-between; 
     align-items: flex-start;
-    max-width: 1480px; /* Adjust as necessary */
-    margin: 0 auto; /* Center the content horizontally */
+    max-width: 1480px; 
+    margin: 0 auto; 
     padding: 20px;
     height: 300px;
 }
 
-/* Style for h1 inside the footer-about section */
+
 .footer-about h1 {
     font-family: var(--font-family);
     color: var(--caption-color);
@@ -376,12 +370,12 @@ body {
 
 /* Style the About section */
 .footer-about {
-    flex: 2; /* Take up available space */
+    flex: 2; 
 }
 
 .underline {
     border-bottom: 3px solid var(--caption-color);
-    margin-bottom: 10px; /* Space between the line and the list */
+    margin-bottom: 10px; 
     margin-left: -3px;
     width: 300px;
 }
@@ -403,6 +397,10 @@ body {
 .f-about li {
     font-family: var(--font-family);
     font-size: 1.2rem;
+}
+.f-about li:hover {
+    font-size: 1.3rem;
+    transition: .2s;
 }
 
 
@@ -442,6 +440,7 @@ body {
 
 .footer-bottom-sec {
     width: 100%;
+    margin-top: -50px;
 }
 
 .footer-bottom {
@@ -487,22 +486,29 @@ body {
 
 .right {
     text-align: right; 
+    margin-left: 55px;
 }
 
 
 
-
+/*Media Query for 1280p Resolution*/
 
 @media screen and (max-width: 1280px) {
 
     /*header*/
     /*nav*/
 
+    .navbar{
+        height: 124px;
+    }
+
     /*about*/
     
     .three {
         height: 1000px; 
     }
+
+
     .content-col{
         grid-template-columns: 1fr; 
     }
@@ -538,6 +544,7 @@ body {
     .info-content{
         grid-template-columns: 1fr; 
         margin-top: 1080px;
+        max-width: 1280px;
     }
 
     .info-content p{
@@ -558,6 +565,122 @@ body {
     .footer-content {
         margin-top: 1420px;
         max-width: 1280px; 
+        flex-direction: column; 
+        align-items: center; 
+        height: auto; 
+        
+    }
+    
+    .footer-about h1{
+        margin-left: 220px;
+    }
+
+    .f-about {
+        
+        width: 100%; 
+        text-align: left; 
+        width: 600px;
+        margin-left: 220px;
+    }
+
+
+    .underline{
+        margin-left: 220px;
+        width: 350px;
+    }
+
+    
+
+    .footer-icons {
+        justify-content: center; 
+        
+    }
+
+    .footer-icons img {
+        margin-top: 50px;
+    }
+
+
+    
+    .footer-bottom-sec {
+        width: 100%;
+        margin-top: 50px;
+    }
+
+    .f-bottom li {
+        width: 330px; 
+        font-size: .5rem;
+    }
+}
+
+@media screen and (max-width: 720px) {
+
+    /*header*/
+    /*nav*/
+
+    /*about*/
+    
+    .three {
+        height: 1000px; 
+    }
+
+
+    .content-col{
+        grid-template-columns: 1fr; 
+    }
+    .content-col .form{
+        margin-top: -120px;
+    }
+
+    /*products*/
+   
+    .prod-ovr{
+        grid-template-columns: 1fr; 
+    }
+
+    .copyright{
+        height: 150px;
+        background-color: var(--button-color);
+    }
+
+    /*more-info*/
+
+    .add-info{
+    
+        width: 600px;
+        margin: 0 0 0 -10px;
+        
+    }
+
+    .info-content img{
+        height: 100px;
+        
+    }
+
+    .info-content{
+        grid-template-columns: 1fr; 
+        margin-top: 1080px;
+        max-width: 720px;
+    }
+
+    .info-content p{
+        margin-top: 20px;
+        margin-left: 5px;
+        font-size: 1.5rem;
+    }
+
+    .info-content h1{
+        margin-top: 50px;
+        margin-left: 5px;
+        font-size: 1.5rem;
+        
+    }
+
+
+    /*footer*/
+    .footer-content {
+        margin-top: 1420px;
+        max-width: 720px; 
         flex-direction: column; 
         align-items: center; 
         height: auto; 

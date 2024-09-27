@@ -19,11 +19,9 @@
 
 body {
     margin: 0;
-    
 }
 
 /*header*/
-
 .header {
     background-color: var(--section-color);
     height: 34px;
@@ -32,9 +30,7 @@ body {
     align-items: center;
 }
 
-
 /*nav*/
-
 .navbar {
     z-index: 2;
     position: sticky;
@@ -68,10 +64,9 @@ body {
     transition: .3s;
 }
 
+/*About*/
 
-
-/*about*/
-
+/*About - Background Image*/
 .three-color-div {
     display: flex;
     flex-direction: column; 
@@ -101,9 +96,7 @@ body {
 
 
 
-
-
-/* Styles for the image */
+/* About - image */
 .overlay-element {
     position: absolute; 
     top: 0; 
@@ -140,9 +133,7 @@ body {
     text-align: center; 
 }
 
-
-
-
+/* About - Form */
 .form {
     background-size: cover; 
     background-position: center; 
@@ -209,7 +200,6 @@ body {
 }
 
 /*products*/
-
 .products {
     background-color: #fff;
     height: 840px;
@@ -219,7 +209,6 @@ body {
     text-align: center; 
     padding: 20px;
 }
-
 .prod-lbl h1 {
     margin-bottom: 70px;
     text-align: center;
@@ -227,7 +216,6 @@ body {
     color: #9F7163;
     font-family: var(--font-family) 
 }
-
 .prod-ovr {
     font-family: var(--font-family);
     color: var(--primary-color);
@@ -241,34 +229,28 @@ body {
     width: 100%; 
     max-width: 1400px; 
 }
-
 .prod-ovr li {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-
 .prod-ovr li img {
     width: 100%; 
     max-width: 280px; 
     height: auto; 
 }
-
 .prod-ovr li img:hover{
     width: 100%; 
     max-width: 275px; 
     height: auto; 
     transition: .4s;
 }
-
 .prod-ovr h1 {
     font-size: 1.4rem; 
     margin-top: 10px; 
     text-align: left;
     color: var(--caption-color);
 }
-
-
 .browse-btn{
     margin-top: 50px;
     border: none;
@@ -279,7 +261,6 @@ body {
     font-size: 1.7rem;
     color: #fff;
 }
-
 .browse-btn:hover{
     background-color: var(--input-color);
     border: 3px solid var(--text-color);
@@ -289,7 +270,6 @@ body {
 
 
 /*more-info*/
-
 .more-info {
     background-color: #fff;
     height: 460px;
@@ -298,13 +278,11 @@ body {
     align-items: center; 
     text-align: center; 
 }
-
 .add-info{
     
     width: 600px;
     margin: 50px 130px 0 80px;
 }
-
 .info-content h1 {
     margin-bottom: 20px;
     color: #9F7163;
@@ -318,7 +296,6 @@ body {
     color: #9F7163;
     font-family: var(--font-family);
 }
-
 .info-content {
     font-family: var(--font-family);
     color: var(--primary-color);
@@ -332,22 +309,18 @@ body {
     max-width: 1620px; 
     
 }
-
 .info-content li {
     display: flex;
     flex-direction: column;
     align-items: center; 
 }
-
 .info-content li img {
     
     width: 685px; 
     height: auto; 
 }
 
-
 /*footer*/
-
 .footer-content {
     display: flex;
     justify-content: space-between; 
@@ -357,8 +330,6 @@ body {
     padding: 20px;
     height: 300px;
 }
-
-
 .footer-about h1 {
     font-family: var(--font-family);
     color: var(--caption-color);
@@ -367,20 +338,15 @@ body {
     padding: 0;
     margin-bottom: 10px;
 }
-
-/* Style the About section */
 .footer-about {
     flex: 2; 
 }
-
 .underline {
     border-bottom: 3px solid var(--caption-color);
     margin-bottom: 10px; 
     margin-left: -3px;
     width: 300px;
 }
-
-/* Create a 5x2 grid layout for the list */
 .f-about {
     display: grid;
     grid-template-columns: 1fr 1fr; 
@@ -392,8 +358,6 @@ body {
     width: 500px; 
     font-size: 1.5rem;
 }
-
-
 .f-about li {
     font-family: var(--font-family);
     font-size: 1.2rem;
@@ -402,18 +366,13 @@ body {
     font-size: 1.3rem;
     transition: .2s;
 }
-
-
 .f-about a {
     text-decoration: none;
     color: var(--caption-color);
 }
-
-
 .f-icons li{
     list-style: none;
 }
-
 .f-icons {
     display: flex;
     justify-content: flex-end;
@@ -421,44 +380,34 @@ body {
     margin-top: 40px;
     gap: 80px;
 }
-
-
 .f-icons img {
     margin-top: 100px;
     max-width: 80px; 
     height: auto;
 }
-
 .f-icons img:hover {
     margin-top: 60px;
     max-width: 85px; 
     height: auto;
     transition: .3s;
 }
-
-
-
 .footer-bottom-sec {
     width: 100%;
     margin-top: -50px;
 }
-
 .footer-bottom {
     display: flex;
     justify-content: center;
     align-items: center; 
 }
-
 .f-one {
     background-color: var(--section-color); 
     height: 38px; 
 }
-
 .f-two {
     background-color: var(--background-color); 
     height: 44px; 
 }
-
 .f-bottom {
     display: flex; 
     justify-content: space-between; 
@@ -466,29 +415,22 @@ body {
     padding: 0; 
     margin: 0; 
 }
-
 .f-bottom li {
     width: 720px;
     font-size: .7rem;
     font-family: var(--font-family);
     color: white; 
-    
 }
-
 .f-bottom h2 {
     margin: 0; 
 }
-
-
 .left {
     text-align: left; 
 }
-
 .right {
     text-align: right; 
     margin-left: 55px;
 }
-
 
 
 /*Media Query for 1280p Resolution*/

@@ -17,12 +17,12 @@
 .hs-one {
     background-color: var(--section-color); 
     height: 33px; 
-    
 }
 
 .hs-two {
     background-color: var(--white-color); 
     height: 126px; 
+    /* Ensure it stays above other content */
 }
 
 .hs-brand-logo img {

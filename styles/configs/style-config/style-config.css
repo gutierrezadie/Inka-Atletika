@@ -14,7 +14,8 @@
     --black-color: #000;
     
     /*font*/
-    --font-family: 'Proxima Nova Rg', sans-serif;
+    --ProximaNova-Regular: 'Proxima Nova Rg', sans-serif;
+    
 }
 
 body {

@@ -5,7 +5,7 @@
         url('ProximaNova-Black.eot?#iefix') format('embedded-opentype'),
         url('ProximaNova-Black.woff2') format('woff2'),
         url('ProximaNova-Black.woff') format('woff'),
-        url('ProximaNova-Black.ttf') format('truetype');
+        url('assets\fonts\ProximaNova-Black.ttf') format('truetype');
     font-weight: 900;
     font-style: normal;
 }
@@ -29,7 +29,7 @@
         url('ProximaNova-SemiboldIt.eot?#iefix') format('embedded-opentype'),
         url('ProximaNova-SemiboldIt.woff2') format('woff2'),
         url('ProximaNova-SemiboldIt.woff') format('woff'),
-        url('ProximaNova-SemiboldIt.ttf') format('truetype');
+        url('assets\fonts\ProximaNova-BlackIt.ttf') format('truetype');
     font-weight: 600;
     font-style: italic;
 }

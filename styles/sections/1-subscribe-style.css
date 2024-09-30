@@ -6,8 +6,6 @@
     position: relative; 
     justify-content: center; /* Centers content vertically */
     align-items: center; 
-    position: sticky; 
-    top: 0; /* Sticks the element to the top of the viewport */
 }
 
 .subscribe-sec {
@@ -26,9 +24,106 @@
 .ss-two {
     background-color: var(--background-color); 
     height: 217px; 
+    position: relative; 
 }
 
 .ss-three {
     background-color: var(--white-color); 
-    height: 200px; 
+    height: 210px; 
 }
+
+
+.subs-content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0; 
+    margin: 0; 
+}
+
+.woman-model {
+    margin-top: 165px;
+}
+
+.woman-model p{
+    font-family: var( --ProximaNova-Regular);
+    color: var(--text-color);
+    font-size: 10.08pt;
+    margin-left: 10px;
+}
+
+.woman-model img {
+    width: 375px;
+    height: 253px;
+}
+
+.form-container{
+    margin-top: 130px;
+    justify-content: center;
+    align-items: center;
+}
+
+.subs-form {
+    width: 328px;
+    height: 301px;
+    margin: 140px 0 0 60px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .ss-two {
+        height: 220px; 
+    }
+
+    .ss-three {
+        height: 610px; 
+    }
+
+    .woman-model {
+        margin: 510px 0 0 5px;
+    }
+
+    .subs-content {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        
+    }
+
+    .subs-form {
+        width: 328px;
+        height: 301px;
+        margin: -100px 0 0 28px;
+    }
+
+
+  }
+
+  @media only screen and (max-width: 390px) {
+
+    .ss-two {
+        height: 210px; 
+    }
+
+    .woman-model {
+        margin: 510px 0 0 -1px;
+    }
+
+    .woman-model p {
+        font-size: 9.5pt;
+    }
+
+    .woman-model img {
+        width: 350px;
+        height: 228px;
+    }
+
+    .subs-form {
+        width: 328px;
+        height: 301px;
+        margin: -120px 0 0 10px;
+    }
+
+  }
+
+
+
+

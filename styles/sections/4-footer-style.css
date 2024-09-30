@@ -1,0 +1,22 @@
+/*footer*/
+.footer-div {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+}
+
+.footer-sec {
+    width: 100%; 
+}
+
+.fs-one {
+    background-color: var(--section-color); 
+    height: 33px; 
+}
+
+.fs-two {
+    background-color: var(--background-color); 
+    height: 39px; 
+}

@@ -1,0 +1,38 @@
+:root{
+    /*Colors*/
+    --section-color: #BB8888;
+    --background-color: #CDB5A2;
+    --textbox-color: #DAB6A9;
+    --text-color: #9E6F61;
+    --caption-color: #AE7E6E;
+    --info-color: #976556;
+    --button-color: #9F7163;
+    --input-color: #DAB6A9;
+    --section1-color: #B98584;
+    --nav-menu: #D1BCAA;
+    --white-color: #fff;
+    --black-color: #000;
+    
+    /*font*/
+    --font-family: 'Proxima Nova Rg', sans-serif;
+}
+
+body {
+    margin: 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -152,23 +152,24 @@
 
   }
 
-  @media only screen and (max-width: 390px) {
+  @media only screen and (max-width: 480px) {
 
     .ss-two {
-        height: 210px; 
+        height: 180px; 
     }
 
     .woman-model {
-        margin: 525px 0 0 -1px;
+        margin: 490px 0 0 -1px;
     }
 
     .woman-model p {
-        font-size: 9.5pt;
+        font-size: 8.5pt;
     }
 
     .woman-model img {
-        width: 350px;
-        height: 228px;
+        margin-left: 5px;
+        width: 300px;
+        height: 198px;
     }
 
     .form-container {
@@ -176,12 +177,51 @@
     }
 
     .subs-form {
-        width: 328px;
+        width: 300px;
         height: 301px;
-        margin: -100px 0 0 10px;
+        margin: -100px 0 0 2px;
+    }
+    .form-input {
+        width: 210px; 
+    }
+
+    .form-button {
+        width: 220px;
+    }
+  }
+
+  @media only screen and (max-width: 320px) {
+
+    .ss-two {
+        height: 180px; 
+    }
+
+    .woman-model {
+        margin: 490px 0 0 -1px;
+    }
+
+    .woman-model p {
+        font-size: 8.5pt;
+    }
+
+    .woman-model img {
+        margin-left: 5px;
+        width: 300px;
+        height: 198px;
+    }
+
+    .form-container {
+        margin-top: 140px;
+    }
+
+    .subs-form {
+        width: 300px;
+        height: 301px;
+        margin: -100px 0 0 2px;
     }
 
   }
+
 
 
 

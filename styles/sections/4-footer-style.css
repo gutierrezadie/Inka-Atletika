@@ -12,11 +12,44 @@
 }
 
 .fs-one {
+    background-color: var(--white-color); 
+    height: 280px; 
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.about-us-link {
+    font-family: var(--ProximaNova-Regular);
+    color: var(--text-color);
+    justify-content: center; 
+    align-items: center; 
+}
+
+.about-us-link ul{
+    list-style: none;
+    
+}
+
+.about-us-link a{
+    text-decoration: none;
+    font-size: 6.81pt;
+    color: var(--text-color);
+}
+
+.about-lbl{
+    
+    font-size: 8.47pt;
+}
+
+
+.fs-two {
     background-color: var(--section-color); 
     height: 33px; 
 }
 
-.fs-two {
+.fs-three {
     background-color: var(--background-color); 
     height: 39px; 
 }

@@ -30,7 +30,7 @@
 
 .ss-three {
     background-color: var(--white-color); 
-    height: 210px; 
+    height: 170px; 
 }
 
 /*Content*/
@@ -111,6 +111,12 @@
     border: none;
 }
 
+.form-button:hover {
+    background-color: var(--input-color);
+    color: var(--white-color);
+    
+}
+
 
 
 @media only screen and (max-width: 768px) {
@@ -120,7 +126,7 @@
     }
 
     .ss-three {
-        height: 610px; 
+        height: 510px; 
     }
 
     .woman-model {

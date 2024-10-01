@@ -4,6 +4,7 @@
     width: 100%; 
     height: auto; 
     position: relative; 
+    z-index: 1000;
 }
 
 .header-sec {
@@ -44,8 +45,8 @@
     color: var(--nav-menu);
 }
 
-.nav-menu a::hover{
-    color: var(--black-color);
+.nav-menu a:hover{
+    color: var(--info-color);
 }
 
 .nav-menu li {

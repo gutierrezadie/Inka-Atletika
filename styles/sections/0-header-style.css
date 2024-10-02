@@ -1,3 +1,9 @@
+.header{
+    position: sticky; 
+    top: 0; 
+    z-index: 1001;
+}
+
 .header-div {
     display: flex;
     flex-direction: column; 
@@ -23,6 +29,7 @@
 .hs-two {
     background-color: var(--white-color); 
     height: 126px; 
+    
 }
 
 .hs-brand-logo img {

@@ -8,7 +8,6 @@
     justify-content: center; 
     align-items: center; 
 }
-
 .footer-sec {
     display: flex;
     justify-content: center; 
@@ -20,7 +19,6 @@
     background-color: var(--white-color); 
     height: 150px; 
 }
-
 
 .top-footer{
     display: grid;
@@ -80,6 +78,7 @@
     margin: 95px 0 0 0;
     width: 182px;
 }
+
 .logo-links li{
     list-style: none;
 }
@@ -90,6 +89,7 @@
     padding: 0; 
     margin: 0; 
 }
+
 .logo-links img{
     width: 26px;
     height: 26px;
@@ -141,38 +141,47 @@
     .fs-one {
         height: 140px; 
     }
+
     .top-footer{
         grid-template-columns: repeat(2, 1fr); 
     }
+
     .about-us-content{
         margin-left: -20px;
         width: 200px;
     }
+
     .about-us-col{
         grid-template-columns: repeat(2, 1fr); 
         width: 250px;
         
     }
+
     .logo-links{
         width: 182px;
     }
+
     .line{
         width: 160px;
         margin: -8px 0 -10px 40px;
     }
+
     .about-lbl h1{
         
         margin-left: -60px;
          
     }
+
     .logo-links{
         margin: 110px 0 0 0;
         width: 120px;
     }
+    
     .top-footer{
       margin-left: 30px;
         column-gap: 100px;
     }
+    
     .copyright-content {
         
         grid-template-columns: 295px 100px 0; 
@@ -207,7 +216,7 @@
         width: 120px;
     }
 
-     .about-us-content{
+    .about-us-content{
         margin-left: 0;
         
     }
@@ -226,12 +235,10 @@
     }
 
     .cr-left{
-        
         justify-self: center;
     }
     
     .cr-right{
-        
         justify-self: center;
     }
 }
@@ -249,17 +256,17 @@
 
      .about-us-content{
         margin-left: 0;
-        
     }
+
     .about-us-col{
         width: 140px;
     }
+
     .cr-left{
-        
         justify-self: center;
     }
+
     .cr-right{
-        
         justify-self: center;
     }
 }

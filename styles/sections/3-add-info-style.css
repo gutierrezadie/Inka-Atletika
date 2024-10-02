@@ -1,13 +1,8 @@
 .add-info{
-    background-color: var(--white-color);
-}
-
-.add-info{
     display: flex;
     flex-direction: column; 
     justify-content: center; 
     align-items: center; 
-    background-color: var(--white-color);
 }
 
 .add-info-content{
@@ -16,7 +11,7 @@
     grid-template-columns: repeat(2, 1fr); 
     gap: 50px;
     padding: 0;
-    margin: 0 0 0 -75px;
+    
     width: 700px;
 }
 
@@ -27,6 +22,7 @@
 
 .more-info{
     margin-top: 15px;
+    
 }
 
 .more-info h2 {
@@ -46,7 +42,13 @@
 }
 
 @media only screen and (max-width: 768px) {
-  
+   
+    .add-info-content{
+         
+        grid-template-columns: repeat(1, 1fr); 
+        
+    }
+    
 }
 
 @media only screen and (max-width: 480px) {

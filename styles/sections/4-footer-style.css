@@ -212,6 +212,7 @@
     .about-us-col{
         width: 140px;
     }
+}
 
 @media only screen and (max-width: 370px) {
 
@@ -234,3 +235,4 @@
     }
     
 }
+

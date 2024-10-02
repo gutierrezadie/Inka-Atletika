@@ -27,7 +27,7 @@
     grid-template-columns: repeat(2, 1fr); 
     padding: 0; 
     margin: 0; 
-    column-gap: 355px;
+    column-gap: 335px;
 }
 
 .about-lbl h1{
@@ -35,7 +35,7 @@
     font-size: 10.47pt;
     color: var(--button-color);
     text-align: center;
-    margin-left: -110px;
+    margin-left: -120px;
      
 }
 
@@ -52,7 +52,7 @@
     grid-template-columns: repeat(2, 1fr); 
     padding: 0; 
     margin: 0; 
-    width: 250px;
+    width: 260px;
 }
 
 .left-col ul li, .right-col ul li {
@@ -69,7 +69,11 @@
     font-family: var(--ProximaNova-Regular);
     font-size: 6.47pt;
     color: var(--button-color);
-    
+}
+
+.about-us-col a:hover{
+    font-size: 6.47pt;
+    color: var(--textbox-color);
 }
 
 .logo-links{
@@ -212,6 +216,10 @@
     .about-us-col{
         width: 140px;
     }
+
+    .left-col, .right-col{
+        margin-bottom: -20px;
+    }
 }
 
 @media only screen and (max-width: 370px) {
@@ -233,6 +241,5 @@
     .about-us-col{
         width: 140px;
     }
-    
 }
 

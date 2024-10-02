@@ -251,7 +251,6 @@
         margin-left: 0;
         
     }
-
     .about-us-col{
         width: 140px;
     }
@@ -259,11 +258,9 @@
         
         justify-self: center;
     }
-    
     .cr-right{
         
         justify-self: center;
     }
-    
 }
 

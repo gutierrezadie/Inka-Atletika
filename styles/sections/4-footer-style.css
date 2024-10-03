@@ -72,6 +72,7 @@
 .about-us-col a:hover{
     font-size: 6.47pt;
     color: var(--textbox-color);
+    text-decoration: underline;
 }
 
 .logo-links{

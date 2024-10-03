@@ -22,7 +22,6 @@ body {
 }
 
 @media only screen and (max-width: 324px) {
-
    body{
     width: 324px;
     margin: 0 auto;

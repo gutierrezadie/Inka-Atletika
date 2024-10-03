@@ -98,7 +98,7 @@
 .logo-links img:hover{
     width: 27px;
     height: 27px;
-    transition: .3s;
+    transition: .3s ease;
 }
 
 /*Second Section*/

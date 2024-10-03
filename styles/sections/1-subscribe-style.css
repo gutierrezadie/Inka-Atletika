@@ -114,6 +114,7 @@
 .form-button:hover {
     background-color: var(--input-color);
     color: var(--white-color);
+    transition: .3s ease;
     
 }
 

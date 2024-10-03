@@ -32,8 +32,27 @@
 
 .product-lists li{
     display: flex; 
+    position: relative;
     justify-content: center;
     margin: 10px 0 0 0;
+}
+
+.product-lists li img {
+    display: block;
+}
+
+.product-lists li .eye-icon {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 40px;
+}
+
+.product-lists li:hover .eye-icon {
+    opacity: 1;
 }
 
 .product-lists h1{
@@ -56,11 +75,6 @@
     align-items: center; 
     text-align: center;
     margin: 10px 0 0 0;
-}
-
-.product-lists img:hover{
-    filter: blur(2px);
-    transition: .3s;
 }
 
 .product-button{
@@ -87,7 +101,7 @@
     border: 1px;
     background-color: var(--input-color);
     color: var(--white-color);
-    transition: .3s;
+    transition: .3s ease;
 }
 
 

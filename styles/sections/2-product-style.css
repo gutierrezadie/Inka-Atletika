@@ -1,0 +1,166 @@
+.product{
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    background-color: var(--white-color);
+    height: 530px;
+    
+}
+
+.section-title{
+    font-family: var(--ProximaNova-Regular);
+    font-size: 16.28pt;
+    color: var(--caption-color);
+    width: 100%;
+    height: 60px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+}
+
+.product-lists{
+    list-style: none;
+    display: grid; 
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 50px;
+    padding: 0;
+    margin: 0;
+    width: 682px;
+}
+
+.product-lists li{
+    display: flex; 
+    position: relative;
+    justify-content: center;
+    margin: 10px 0 0 0;
+}
+
+.product-lists li img {
+    display: block;
+}
+
+.product-lists li .eye-icon {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    width: 40px;
+}
+
+.product-lists li:hover .eye-icon {
+    opacity: 1;
+}
+
+.product-lists h1{
+    text-decoration: none;
+    text-align: left;
+    font-family: var(--ProximaNova-Regular);
+    font-size: 11.25pt;
+    color: var(--text-color);
+}
+
+.product-lists a{
+    text-decoration: none;
+}
+
+.product-lists img{
+    height: 252px;
+    width: 168px;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center;
+    margin: 10px 0 0 0;
+}
+
+.product-button{
+    
+    display: flex;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+}
+
+.browse-btn{
+    margin-top: 25px;
+    border: 0;
+    padding: 0;
+    width: 179px;
+    height: 32px;
+    font-family: var(--ProximaNova-Regular);
+    background-color: var(--button-color);
+    font-size: 10.12pt;
+    color: var(--white-color);
+}
+
+.browse-btn:hover{
+    border: 1px;
+    background-color: var(--input-color);
+    color: var(--white-color);
+    transition: .3s ease;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .product{
+        margin-top: 50px;
+        height: 1400px;
+    }
+
+    .product-lists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        width: 270px;
+        gap: 5px;
+    }
+    .product-lists img{
+        height: 322px;
+        width: 208px;
+    }
+    .product-lists h1{
+        font-size: 13.25pt;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .product{
+        margin-top: 15px;
+        height: 1320px;
+    }
+    .product-lists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        width: 270px;
+        gap: 5px;
+        
+    }
+    .product-lists img{
+        height: 302px;
+        width: 188px;
+    }
+    .product-lists h1{
+        font-size: 11.25pt;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .product{
+        margin-top: 15px;
+        height: 1320px;
+    }
+    .product-lists {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr); 
+        width: 270px;
+        gap: 5px;
+    }
+    .product-lists img{
+        height: 302px;
+        width: 188px;
+    }
+    
+}

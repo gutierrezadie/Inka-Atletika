@@ -1,0 +1,279 @@
+/*footer*/
+.footer-div {
+    display: flex;
+    flex-direction: column; 
+    width: 100%; 
+    height: auto; 
+    position: relative; 
+    justify-content: center; 
+    align-items: center; 
+}
+.footer-sec {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    width: 100%;
+}
+
+.fs-one {
+    background-color: var(--white-color); 
+    height: 150px; 
+}
+
+.top-footer{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0; 
+    margin: 0; 
+    column-gap: 335px;
+}
+
+.about-lbl h1{
+    font-family: var(--ProximaNova-Regular);
+    font-size: 10.47pt;
+    color: var(--button-color);
+    text-align: center;
+    margin-left: -120px;
+     
+}
+
+.line{
+    background-color: var(--button-color);
+    height: 1px;
+    width: 155px;
+    margin: -8px 0 -10px 40px;
+     
+}
+
+.about-us-col{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); 
+    padding: 0; 
+    margin: 0; 
+    width: 260px;
+}
+
+.left-col ul li, .right-col ul li {
+    margin-bottom: -10px; 
+}
+
+.about-us-col li{
+    list-style: none;
+    text-align: left;
+}
+
+.about-us-col a{
+    text-decoration: none;
+    font-family: var(--ProximaNova-Regular);
+    font-size: 6.47pt;
+    color: var(--button-color);
+}
+
+.about-us-col a:hover{
+    font-size: 6.47pt;
+    color: var(--textbox-color);
+}
+
+.logo-links{
+    margin: 95px 0 0 0;
+    width: 182px;
+}
+
+.logo-links li{
+    list-style: none;
+}
+
+.logo-links ul{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    padding: 0; 
+    margin: 0; 
+}
+
+.logo-links img{
+    width: 26px;
+    height: 26px;
+}
+
+.logo-links img:hover{
+    width: 27px;
+    height: 27px;
+    transition: .3s ease;
+}
+
+/*Second Section*/
+
+.fs-two {
+    background-color: var(--section-color); 
+    height: 33px; 
+}
+
+.copyright-content {
+    display: grid;
+    grid-template-columns: 360px 1fr 70px; 
+    padding: 0;
+    margin: 0;
+    gap: 10px; 
+    width: 780px; 
+}
+
+.cr-left {
+    justify-self: start; 
+}
+
+.cr-right {
+    justify-self: end; 
+}
+
+.copyright-content h3 {
+    font-family: var(--ProximaNova-Regular);
+    font-size: 9.12pt;
+    color: var(--white-color);
+    text-align: center; 
+}
+
+.fs-three {
+    background-color: var(--background-color); 
+    height: 39px; 
+}
+
+@media only screen and (max-width: 878px){
+    .about-us-content{
+        margin-left: -45px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .fs-one {
+        height: 140px; 
+    }
+
+    .top-footer{
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+    .about-us-content{
+        margin-left: -20px;
+        width: 200px;
+    }
+
+    .about-us-col{
+        grid-template-columns: repeat(2, 1fr); 
+        width: 250px;
+        
+    }
+
+    .logo-links{
+        width: 182px;
+    }
+
+    .line{
+        width: 160px;
+        margin: -8px 0 -10px 40px;
+    }
+
+    .about-lbl h1{
+        
+        margin-left: -60px;
+         
+    }
+
+    .logo-links{
+        margin: 110px 0 0 0;
+        width: 120px;
+    }
+    
+    .top-footer{
+      margin-left: 40px;
+        column-gap: 140px;
+    }
+    
+    .copyright-content {
+        
+        grid-template-columns: 295px 100px 0; 
+        
+        width: 420px; 
+    }
+}
+
+@media only screen and (max-width: 565px) {
+    
+    .fs-one {
+        height: 290px; 
+    }
+    .fs-two {
+        height: 80px; 
+    }
+
+    .about-us-col{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .top-footer{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .line{
+        width: 60px;
+    }
+
+    .logo-links{
+        margin: 50px 0 0 32px;
+        width: 120px;
+    }
+
+    .about-us-content{
+        margin-left: 0;
+        
+    }
+
+    .about-us-col{
+        width: 140px;
+    }
+
+    .left-col, .right-col{
+        margin-bottom: -20px;
+    }
+
+    .copyright-content{
+        grid-template-columns: repeat(1, auto); 
+        gap: 0px;
+    }
+
+    .cr-left{
+        justify-self: center;
+    }
+    
+    .cr-right{
+        justify-self: center;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+
+    .top-footer{
+        grid-template-columns: repeat(1, 1fr); 
+    }
+
+    .logo-links{
+        margin: 50px 0 0 32px;
+        width: 120px;
+    }
+
+     .about-us-content{
+        margin-left: 0;
+    }
+
+    .about-us-col{
+        width: 140px;
+    }
+
+    .cr-left{
+        justify-self: center;
+    }
+
+    .cr-right{
+        justify-self: center;
+    }
+}
+

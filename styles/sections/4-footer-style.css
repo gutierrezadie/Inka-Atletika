@@ -95,6 +95,12 @@
     height: 26px;
 }
 
+.logo-links img:hover{
+    width: 27px;
+    height: 27px;
+    transition: .3s;
+}
+
 /*Second Section*/
 
 .fs-two {
